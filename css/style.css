@@ -377,16 +377,18 @@ main {
 }
 .plans-card-slider {
 	display: flex;
+	gap: 0 5px;
 	width: 100%;
-	/* height: 320px;
+	height: auto;
+	padding: 25px 0;
 	align-items: center;
 	overflow-x: scroll;
 	overscroll-behavior-x: contain;
-	scroll-snap-type: x proximity; */
+	scroll-snap-type: x proximity;
 }
 .plans-deal-box {
 	position: relative;
-	/* scroll-snap-align: center; */
+	scroll-snap-align: center;
 	background-color: var(--just-white);
 	width: 60%;
 	min-width: 190px;
@@ -395,18 +397,24 @@ main {
 	box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
 	border-radius: 8px;
 }
-.plans-deal-box.left {
-	left: -41.5%;
+.plans-deal-box.left,
+.plans-deal-box.right {
 	opacity: 0.5;
+}
+.plans-deal-box.left:hover,
+.plans-deal-box.right:hover {
+	opacity: 1;
+}
+.plans-deal__content {
+	width: 100%;
+	opacity: 0;
+}
+.plans-deal__content:hover {
+	opacity: 1;
 }
 .plans-deal-box.center {
 	display: flex;
 	flex-direction: column;
-	right: 39.5%;
-}
-.plans-deal-box.right {
-	right: 37.5%;
-	opacity: 0.5;
 }
 .center .highlight {
 	background-color: var(--bitcoin-orange);
@@ -421,16 +429,6 @@ main {
 	width: 53.5%;
 	text-align: center;
 	align-self: center;
-}
-.right .title,
-.right .deal-amount,
-.right .deal-disclaimer,
-.right a,
-.left .title,
-.left .deal-amount,
-.left .deal-disclaimer,
-.left a {
-	display: none;
 }
 .right .title,
 .center .title,
@@ -488,12 +486,23 @@ main {
 	background-color: var(--off-white);
 	padding: 12px 16px;
 	text-decoration: none;
-	border: 2px solid var(--bitcoin-orange);
+	border: 2px solid var(--grey);
 	border-radius: 4px;
 	font-size: 1.4rem;
 	line-height: 1.8rem;
 	font-weight: bold;
 	color: var(--warm-black);
+}
+.plans-deal-box.center a:hover,
+.plans-deal-box.left a:hover,
+.plans-deal-box.right a:hover {
+	border-color: var(--bitcoin-orange);
+	color: var(--warm-black);
+}
+.plans-deal-box.center a:hover .right-chevron,
+.plans-deal-box.left a:hover .right-chevron,
+.plans-deal-box.right a:hover .right-chevron {
+	background: url(../assets/icons/arrow-right.svg);
 }
 .plans-deal-box.left a,
 .plans-deal-box.right a {
@@ -515,14 +524,10 @@ main {
 	display: inline-block;
 	align-self: center;
 	vertical-align: middle;
-	background: url("../assets/icons/arrow-right.svg") center/cover no-repeat;
-	width: 24px;
-	height: 24px;
-}
-.plans-deal-box.right .right-chevron,
-.plans-deal-box.left .right-chevron {
 	background: url("../assets/icons/grey-right-chevron.svg") center/cover
 		no-repeat;
+	width: 24px;
+	height: 24px;
 }
 .plans-card-slider .left-arrow,
 .plans-card-slider .right-arrow {
@@ -609,6 +614,9 @@ footer div {
 	text-decoration: none;
 	color: var(--just-white);
 	margin: 8px;
+}
+.social-media-links a:hover {
+	text-decoration: underline;
 }
 .company-reserved-rights {
 	margin-left: 15px;

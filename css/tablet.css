@@ -50,6 +50,7 @@ header .batata-logo {
 .specs-description-container {
 	grid-template: repeat(2, 1fr) / repeat(2, 1fr);
 	gap: 15px;
+	margin-bottom: 15px;
 }
 .specs-text-container h2 {
 	font-size: var(--fs-40px);
@@ -85,7 +86,8 @@ header .batata-logo {
 .plans-card-slider {
 	align-content: center;
 	justify-content: space-evenly;
-	padding: 0 2.5%;
+	padding: 25px 0;
+	gap: 0;
 }
 .plans-card-slider .right-arrow,
 .plans-card-slider .left-arrow {
@@ -98,10 +100,12 @@ header .batata-logo {
 .plans-deal-box.left,
 .plans-deal-box.right {
 	display: flex;
-	flex-direction: column;
-	align-content: center;
+	align-items: center;
 	justify-content: center;
-	padding: 25px 10px 0;
+	opacity: 1;
+}
+.plans-deal__content {
+	opacity: 1;
 }
 .right .title,
 .left .title {
@@ -116,23 +120,9 @@ header .batata-logo {
 .center .title {
 	margin-top: -5px;
 }
-.right .title,
-.right .deal-disclaimer,
-.right a,
-.left .title,
-.left .deal-disclaimer,
-.left a {
-	display: initial;
-}
 .left .deal-amount,
 .right .deal-amount {
 	display: flex;
-}
-.left .deal-disclaimer,
-.right .deal-disclaimer {
-	width: 95%;
-	max-width: 189px;
-	margin: 0 0 18px;
 }
 .faq-container h2 {
 	font-size: var(--fs-40px);

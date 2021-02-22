@@ -38,7 +38,6 @@ header .batata-logo {
 }
 .exchange-currency-table,
 .exchange-commission-table {
-	max-width: 650px;
 	height: 400px;
 }
 .exchange-chart-currency,
@@ -50,7 +49,6 @@ header .batata-logo {
 .exchange-commission-table h2 {
 	font-size: 3rem;
 	line-height: 3.2rem;
-	margin-left: 25%;
 }
 .table__left,
 .table__right {
@@ -65,7 +63,6 @@ header .batata-logo {
 }
 .exchange-date.currency,
 .exchange-date.commission {
-	margin: 25px 0 0 20%;
 	display: flex;
 	font-size: var(--fs-20px);
 	line-height: var(--lh-42px);

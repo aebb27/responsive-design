@@ -33,6 +33,9 @@
 	width: 5%;
 	top: 48px;
 }
+.exchange--chart--container {
+	width: 50%;
+}
 .specs-description-container {
 	max-width: 900px;
 }
