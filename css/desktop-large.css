@@ -1,0 +1,29 @@
+.header--title--container {
+	max-width: 700px;
+}
+.header--title--container p {
+	padding: 0;
+}
+.header--title--container .header--button {
+	width: 350px;
+	height: 60px;
+	font-size: 2rem;
+	top: calc(50% + 210px);
+	left: calc(50% - 175px);
+}
+.header--button .arrow-down {
+	width: 18px;
+	height: 18px;
+	margin: 2.5px 0 0 20px;
+}
+.exchange-currency-table,
+.exchange-commission-table {
+	height: 320px;
+}
+.exchange-chart-currency,
+.exchange-chart-commission {
+	height: 225px;
+}
+.main-exchange-logo {
+	top: 52.5px;
+}

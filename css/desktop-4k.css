@@ -1,0 +1,194 @@
+:root {
+	--fs-30px: 3rem;
+	--lh-32px: 3.2rem;
+	--lh-24px: 2.4rem;
+	--fs-60px: 6rem;
+	--lh-64px: 6.2rem;
+}
+header .batata-logo {
+	margin-top: 20px;
+}
+.header--title--container,
+.exchange--text--container,
+.specs-text-container,
+.plans-text-container,
+.faq-container h2 {
+	max-width: 1000px;
+}
+.header--title--container h1,
+.exchange--text--container h2,
+.specs-text-container h2,
+.hero-container h2,
+.plans-text-container h2,
+.faq-container h2 {
+	font-size: var(--fs-60px);
+	line-height: var(--lh-64px);
+}
+.header--title--container p,
+.exchange--text--container p,
+.specs-text-container p,
+.plans-text-container p,
+.question p {
+	font-size: var(--fs-30px);
+	line-height: var(--lh-32px);
+}
+.exchange--image--container {
+	width: 300px;
+	height: 300px;
+}
+.exchange-currency-table,
+.exchange-commission-table {
+	max-width: 650px;
+	height: 400px;
+}
+.exchange-chart-currency,
+.exchange-chart-commission {
+	max-width: 400px;
+	height: 300px;
+}
+.exchange-currency-table h2,
+.exchange-commission-table h2 {
+	font-size: 3rem;
+	line-height: 3.2rem;
+	margin-left: 25%;
+}
+.table__left,
+.table__right {
+	font-size: 2.4rem;
+	line-height: 2.8rem;
+}
+.trending-up,
+.trending-down {
+	width: 24px;
+	height: 24px;
+	margin-left: 10px;
+}
+.exchange-date.currency,
+.exchange-date.commission {
+	margin: 25px 0 0 20%;
+	display: flex;
+	font-size: var(--fs-20px);
+	line-height: var(--lh-42px);
+	height: 50px;
+}
+.exchange-date p {
+	font-weight: 500;
+	align-self: center;
+}
+.main-exchange-logo {
+	top: 65px;
+}
+.specs-description-container {
+	max-width: 1500px;
+}
+.specs-description {
+	flex-basis: 730px;
+	height: 200px;
+}
+.specs-icon {
+	width: 45px;
+	height: 45px;
+}
+.specs-title,
+.right .title,
+.center .title,
+.left .title {
+	font-size: 2.4rem;
+	line-height: 3rem;
+	margin-bottom: 16px;
+}
+.specs-caption,
+.left .deal-disclaimer,
+.center .deal-disclaimer,
+.right .deal-disclaimer {
+	font-size: 2rem;
+	line-height: var(--lh-24px);
+}
+.left .deal-disclaimer,
+.right .deal-disclaimer {
+	max-width: 350px;
+}
+.plans-deal-box {
+	max-width: 300px;
+	height: 375px;
+}
+.plans-text-container p {
+	margin-bottom: 75px;
+}
+.plans-deal-box.left,
+.plans-deal-box.right {
+	padding-top: 35px;
+}
+.center .highlight {
+	margin-bottom: 25px;
+	width: auto;
+	height: auto;
+	font-size: 2rem;
+	line-height: var(--lh-24px);
+}
+.deal-amount #dollar-sign {
+	top: 2.5px;
+	font-size: 2.4rem;
+	line-height: 2.8rem;
+}
+.right .deal-amount #dollar-sign {
+	right: 10.5px;
+}
+.deal-amount #money-amount {
+	font-size: var(--fs-60px);
+	line-height: var(--lh-64px);
+	margin-bottom: 32px;
+}
+.specs-caption,
+.left .deal-disclaimer,
+.center .deal-disclaimer,
+.right .deal-disclaimer {
+	margin-bottom: 32px;
+}
+.plans-deal-box.left a,
+.plans-deal-box.right a,
+.plans-deal-box.center a {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	font-size: 2rem;
+	line-height: var(--lh-24px);
+}
+.plans-deal-box.left a,
+.plans-deal-box.right a {
+	margin-top: 10px;
+}
+.plans-deal-box.center a {
+	margin-top: 5px;
+}
+.plans-deal-box.right .right-chevron,
+.plans-deal-box.left .right-chevron,
+.plans-deal-box.center .right-chevron {
+	margin: 2.5px 0 0 10px;
+	width: 30px;
+	height: 30px;
+}
+.question-container {
+	max-width: 1500px;
+}
+.question p {
+	max-width: 650px;
+}
+.question img {
+	width: 20px;
+	height: 20px;
+}
+footer {
+	padding: 3.5%;
+}
+.social-media-links,
+.company-reserved-rights,
+.company-reserved-rights p {
+	margin: 0;
+	font-size: 2rem;
+	line-height: var(--lh-24px);
+}
+.social-media-links a {
+	font-size: 2.5rem;
+	margin: 15px;
+}

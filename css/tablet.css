@@ -1,0 +1,139 @@
+:root {
+	--fs-40px: 4rem;
+	--fs-20px: 2rem;
+	--lh-42px: 4.2rem;
+	--lh-24px: 2.4rem;
+}
+header {
+	height: 480px;
+}
+header .batata-logo {
+	margin-top: 10px;
+}
+.header--title--container h1 {
+	font-size: var(--fs-40px);
+	line-height: var(--lh-42px);
+}
+.header--title--container p {
+	margin-top: 32px;
+	font-size: var(--fs-20px);
+	line-height: var(--lh-24px);
+}
+.exchange--text--container h2 {
+	font-size: var(--fs-40px);
+	line-height: var(--lh-42px);
+}
+.exchange--text--container p {
+	font-size: var(--fs-20px);
+	line-height: var(--lh-24px);
+}
+.exchange--chart--container {
+	width: 60%;
+	margin: 0 auto;
+	display: flex;
+}
+.exchange-currency-table h2,
+.exchange-commission-table h2 {
+	position: initial;
+}
+.exchange-commission-table {
+	display: initial;
+	position: initial;
+}
+.exchange-chart-currency .right-arrow,
+.exchange-chart-commission .left-arrow {
+	display: none;
+}
+.specs-text-container h2 {
+	font-size: var(--fs-40px);
+	line-height: var(--lh-42px);
+}
+.specs-text-container p {
+	padding: 0 10px;
+	font-size: var(--fs-20px);
+	line-height: var(--lh-24px);
+}
+.hero-container {
+	padding: 0;
+	min-height: 299px;
+	background: url("../assets/images/bitcoinbaby_horizontal.jpg") center/cover
+		no-repeat;
+	align-items: center;
+}
+.hero-container h2 {
+	font-size: var(--fs-40px);
+	line-height: var(--lh-42px);
+}
+.plans-text-container h2 {
+	font-size: var(--fs-40px);
+	line-height: var(--lh-42px);
+}
+.plans-text-container p {
+	font-size: var(--fs-20px);
+	line-height: var(--lh-24px);
+}
+.plans-deal-box {
+	position: initial;
+}
+.plans-card-slider {
+	align-content: center;
+	justify-content: space-evenly;
+	padding: 0 2.5%;
+}
+.plans-card-slider .right-arrow,
+.plans-card-slider .left-arrow {
+	display: none;
+}
+.plans-deal-box {
+	width: 50%;
+	max-width: 223px;
+}
+.plans-deal-box.left,
+.plans-deal-box.right {
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	justify-content: center;
+	padding: 25px 10px 0;
+}
+.right .title,
+.left .title {
+	margin-top: 0;
+}
+.plans-deal-box.center {
+	padding: 10px 10px 0;
+}
+.center .highlight {
+	top: -25px;
+}
+.center .title {
+	margin-top: -5px;
+}
+.right .title,
+.right .deal-disclaimer,
+.right a,
+.left .title,
+.left .deal-disclaimer,
+.left a {
+	display: initial;
+}
+.left .deal-amount,
+.right .deal-amount {
+	display: flex;
+}
+.left .deal-disclaimer,
+.right .deal-disclaimer {
+	width: 95%;
+	max-width: 189px;
+	margin: 0 0 18px;
+}
+.faq-container h2 {
+	font-size: var(--fs-40px);
+	line-height: var(--lh-42px);
+}
+.company-reserved-rights img {
+	margin-bottom: 15px;
+}
+.company-reserved-rights p {
+	font-size: 1.2rem;
+}
