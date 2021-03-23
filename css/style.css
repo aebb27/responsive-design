@@ -18,8 +18,13 @@ Orden para generar estilos
 	--just-white: #ffffff;
 	--dark-grey: #808080;
 	--light-grey: #757575;
-	--dm-sans: "DM Sans", sans-serif;
-	--inter: "Inter", sans-serif;
+	--dm-sans: 'DM Sans', sans-serif;
+	--inter: 'Inter', sans-serif;
+	--hover: #f1efee;
+	--orange-hover: #f79723;
+	--orange--active: #dc8419;
+	--active: #dedcdc;
+	--border-active: 1px solid #121212;
 }
 * {
 	margin: 0;
@@ -28,7 +33,7 @@ Orden para generar estilos
 }
 html {
 	font-size: 62.5%;
-	font-family: "DM Sans", sans-serif;
+	font-family: 'DM Sans', sans-serif;
 	scroll-behavior: smooth;
 }
 body {
@@ -112,7 +117,7 @@ main {
 	text-align: center;
 }
 .exchange--image--container {
-	background: url("../assets/images/bitcoin.svg") center/cover no-repeat;
+	background: url('../assets/images/bitcoin.svg') center/cover no-repeat;
 	width: 200px;
 	height: 200px;
 	margin: 0 auto 50px;
@@ -239,7 +244,7 @@ main {
 .exchange-date p {
 	line-height: 1.45rem;
 	font-weight: normal;
-	font-family: "Inter", sans-serif;
+	font-family: 'Inter', sans-serif;
 }
 .exchange-commission-table {
 	display: none;
@@ -334,7 +339,7 @@ main {
 .hero-container {
 	width: 100%;
 	min-height: 397px;
-	background: url("../assets/images/bitcoinbaby.jpg") center/cover no-repeat;
+	background: url('../assets/images/bitcoinbaby.jpg') center/cover no-repeat;
 	display: flex;
 	justify-content: center;
 	padding-top: 64px;
@@ -446,7 +451,7 @@ main {
 .deal-amount {
 	display: flex;
 	justify-content: center;
-	font-family: "Inter", sans-serif;
+	font-family: 'Inter', sans-serif;
 }
 .deal-amount #dollar-sign {
 	width: min-content;
@@ -468,7 +473,7 @@ main {
 	margin-bottom: 16px;
 }
 .deal-disclaimer {
-	font-family: "Inter", sans-serif;
+	font-family: 'Inter', sans-serif;
 	font-size: 1.2rem;
 	line-height: 1.5rem;
 	font-weight: 500;
@@ -524,7 +529,7 @@ main {
 	display: inline-block;
 	align-self: center;
 	vertical-align: middle;
-	background: url("../assets/icons/grey-right-chevron.svg") center/cover
+	background: url('../assets/icons/grey-right-chevron.svg') center/cover
 		no-repeat;
 	width: 24px;
 	height: 24px;
@@ -539,14 +544,14 @@ main {
 }
 .plans-card-slider .left-arrow {
 	display: none;
-	background: url("../assets/icons/grey-arrow.svg") center/cover no-repeat;
+	background: url('../assets/icons/grey-arrow.svg') center/cover no-repeat;
 	top: 598%;
 	right: 85%;
 	transform: rotate(180deg);
 }
 .plans-card-slider .right-arrow {
 	display: none;
-	background: url("../assets/icons/grey-arrow.svg") center/cover no-repeat;
+	background: url('../assets/icons/grey-arrow.svg') center/cover no-repeat;
 	top: 598%;
 	bottom: 0;
 	left: 85%;
@@ -570,25 +575,48 @@ main {
 	text-align: center;
 }
 .question-container {
+	display: grid;
+	grid-template-rows: repeat(4, auto);
+	grid-auto-rows: auto;
 	width: 90%;
 	min-width: 288px;
-	max-width: 375px;
+	max-width: 500px;
 	margin: 0 auto;
+	gap: 15px 0;
 }
 .question {
-	margin-bottom: 15px;
-	display: flex;
-	justify-content: space-between;
+	width: 100%;
+	display: grid;
+	grid-template: repeat(2, auto) / minmax(264px, 1fr) auto;
+	align-items: center;
 	height: auto;
 }
 .question p {
 	width: 90%;
-	max-width: 239px;
-	margin-right: 10px;
-	color: var(--light-grey);
+	color: var(--warm-black);
 	font-size: 1.4rem;
 	font-weight: 500;
 	line-height: 1.8rem;
+}
+.question .question-answer {
+	color: var(--light-grey);
+	grid-area: 2/1/3/2;
+	letter-spacing: -0.02em;
+	font-family: var(--dm-sans);
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 20px;
+	margin-top: 24px;
+	text-align: justify;
+}
+.show-more-buttons,
+.show-less-buttons {
+	justify-self: center;
+	width: 24px;
+	height: 24px;
+	border: none;
+	background: none;
+	user-select: none;
 }
 footer {
 	background-color: var(--bitcoin-orange);
@@ -633,6 +661,21 @@ footer div {
 	font-weight: 500;
 	color: var(--soft-orange);
 }
+.hide {
+	display: none;
+}
+button {
+	cursor: pointer;
+	user-select: none;
+}
+button:hover {
+	background: var(--hover);
+}
+button:active,
+a:active {
+	background: var(--active);
+	border: var(--border-active);
+}
 
 @media screen and (min-width: 359px) {
 	.plans-deal-box.right {
@@ -674,7 +717,7 @@ footer div {
 		left: 150px;
 	}
 	.hero-container {
-		background: url("../assets/images/bitcoinbaby_2x.jpg") center/cover
+		background: url('../assets/images/bitcoinbaby_2x.jpg') center/cover
 			no-repeat;
 	}
 	.plans-deal-box.left {

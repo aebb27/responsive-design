@@ -62,10 +62,6 @@
 }
 .question-container {
 	width: 100%;
-	max-width: 900px;
-}
-.question {
-	justify-content: space-evenly;
 }
 .question p {
 	font-size: var(--fs-20px);

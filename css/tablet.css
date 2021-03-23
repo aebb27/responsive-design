@@ -64,7 +64,7 @@ header .batata-logo {
 .hero-container {
 	padding: 0;
 	min-height: 299px;
-	background: url("../assets/images/bitcoinbaby_horizontal.jpg") center/cover
+	background: url('../assets/images/bitcoinbaby_horizontal.jpg') center/cover
 		no-repeat;
 	align-items: center;
 }
@@ -91,6 +91,9 @@ header .batata-logo {
 }
 .plans-card-slider .right-arrow,
 .plans-card-slider .left-arrow {
+	display: none;
+}
+.plans-card-slider::-webkit-scrollbar {
 	display: none;
 }
 .plans-deal-box {
